@@ -3,30 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Z Fabrics | Premium Retail</title>
+    <title>Z Fabrics | Premium Collection</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-        
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fafafa; color: #111; }
-        
-        /* Navbar Style */
-        .nav-glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid #eee; }
-        
-        /* Professional Square Card */
-        .product-card { 
-            background: #fff; 
-            border-radius: 12px; /* Smooth Corners */
-            overflow: hidden;
-            border: 1px solid #eaeaea;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-        .product-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); }
+        body { background-color: #f7f7f7; font-family: sans-serif; }
+        .category-header { background: #1a1a1a; color: white; padding: 12px; margin: 20px 0; border-radius: 6px; font-weight: bold; text-align: center; }
+        .product-card { background: white; border-radius: 12px; border: 1px solid #eee; overflow: hidden; display: flex; flex-direction: column; }
+        .img-box { width: 100%; aspect-ratio: 1/1; background: #efefef; }
+        .img-box img { width: 100%; height: 100%; object-fit: cover; }
+        .wa-btn { background: #000; color: #fff; padding: 10px; text-align: center; font-weight: bold; text-decoration: none; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="p-6 text-center bg-white border-b sticky top-0 z-50">
+        <h1 class="text-3xl font-black">Z FABRICS</h1>
+        <p class="text-[10px] text-gray-400 uppercase tracking-widest">Khanpur, Punjab</p>
+    </div>
 
-        /* Aspect Ratio Square for Images */
-        .img-square { position: relative; width: 100%; aspect-ratio: 1 / 1; background: #f3f3f3; overflow: hidden; }
-        .fabric-img { width: 100%; height: 100%; object-fit: cover; }
+    <div class="container mx-auto px-4 pb-20 max-w-4xl">
+        
+        <div class="category-header">Premium Cotton Collection</div>
+        <div class="grid grid-cols-2 gap-4">
+            
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="images (1).jpeg" alt="Z Fabrics Cotton">
+                </div>
+                <div class="p-4 text-center flex-grow">
+                    <p class="font-bold text-sm">Royal White Cotton</p>
+                    <p class="text-amber-800 font-bold mt-1">Rs. 3,250</p>
+                </div>
+                <a href="https://wa.me/923299878357?text=Mujhe Royal White Cotton chahiye" class="wa-btn">WhatsApp Order</a>
+            </div>
 
-        /* Z Fabrics Logo Sticker Overlay */
-        .brand-overlay {
-            position:
+        </div>
+
+        <div class="category-header">Wash & Wear Collection</div>
+        <div class="grid grid-cols-2 gap-4">
+            
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="https://placehold.co/400x400?text=Wash+Wear+Photo" alt="Wash Wear">
+                </div>
+                <div class="p-4 text-center flex-grow">
+                    <p class="font-bold text-sm">Charcoal Grey W&W</p>
+                    <p class="text-amber-800 font-bold mt-1">Rs. 2,950</p>
+                </div>
+                <a href="https://wa.me/923299878357?text=Mujhe Charcoal Grey Wash Wear chahiye" class="wa-btn">WhatsApp Order</a>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
